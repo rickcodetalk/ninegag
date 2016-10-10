@@ -1,46 +1,40 @@
+<div class="container">
 
-  <!--  <div class="container" 
-                infinite-scroll
-                [infiniteScrollDistance]="2"
-                [infiniteScrollThrottle]="200"
-                >-->
-    <div class="container">
-
-        <div class="sortby">
-            <span>Sort by:</span>
-            <div class="btn-group">
-                <button type="button" class="btn btn-primary active" (click)="sortByCreation()"><span>Creation</span></button>
-                <button type="button" class="btn btn-primary" (click)="sortByLikes()"><span>Likes</span></button>
-                <button type="button" class="btn btn-primary" (click)="sortByComments()"><span>Comments</span></button>
-            </div>
+    <div class="sortby">
+        <span>Sort by:</span>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary active" (click)="sortByCreation()"><span>Creation</span></button>
+            <button type="button" class="btn btn-primary" (click)="sortByLikes()"><span>Likes</span></button>
+            <button type="button" class="btn btn-primary" (click)="sortByComments()"><span>Comments</span></button>
         </div>
+    </div>
 
-        <div class="all-post">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 post" style="border-color:white;" *ngFor="let post of posts; trackBy:trackById">
+    <div class="all-post">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 post" style="border-color:white;" *ngFor="let post of posts; trackBy:trackById">
 
-                <div class="thumbnail">
-                    <img src="{{post.images.standard_resolution.url}}" *ngIf="post.type==='image'">
-                    <video controls *ngIf="post.type==='video'" poster="{{post.images.standard_resolution.url}}">
-                        <source src="{{post.videos.standard_resolution.url}}">
-                    </video>
-                </div>
-                <div class="caption">
-                                    
-                    <span><div [innerHTML]="post.caption.text"></div></span>
-
-                </div>
-                <div class="like" (^click)="onTest">
-                    <img src="../assets/images/like.png"><span>{{post.likes.count}}</span>
-                </div>
-                <div class="comment">
-                    <img src="../assets/images/comment.png"><span>{{post.comments.count}}</span>
-                </div>
-                <div class="creation">
-                    <a href="{{post.link}}" target="_blank"><span>Creation: {{post.creation | amTimeAgo}}</span></a>
-                </div>
+            <div class="thumbnail">
+                <img src="{{post.images.standard_resolution.url}}" *ngIf="post.type==='image'">
+                <video controls *ngIf="post.type==='video'" poster="{{post.images.standard_resolution.url}}">
+                    <source src="{{post.videos.standard_resolution.url}}">
+                </video>
             </div>
+            <div class="caption">
+                                
+                <span><div [innerHTML]="post.caption.text"></div></span>
 
+            </div>
+            <div class="like" (^click)="onTest">
+                <img src="../assets/images/like.png"><span>{{post.likes.count}}</span>
+            </div>
+            <div class="comment">
+                <img src="../assets/images/comment.png"><span>{{post.comments.count}}</span>
+            </div>
+            <div class="creation">
+                <a href="{{post.link}}" target="_blank"><span>Creation: {{post.creation | amTimeAgo}}</span></a>
+            </div>
         </div>
 
     </div>
-    <!--<div class="filler"></div>-->
+
+</div>
+<div class="filler"></div>

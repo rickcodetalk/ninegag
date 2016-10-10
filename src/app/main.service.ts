@@ -2,9 +2,10 @@ import { Injectable } from '@angular/core';
 import { Headers, Http, RequestOptions, Jsonp } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Subject } from 'rxjs/Subject';
-//const SERVER_URL = 'http://ec2-52-38-213-23.us-west-2.compute.amazonaws.com:3000';
-//const SERVER_URL = 'http://localhost:3000';
-const SERVER_URL = 'http://9gagtest.rickcodetalk.net:3000'
+// Localhost
+const SERVER_URL = 'http://localhost:3000';
+// AWS Server
+//const SERVER_URL = 'http://9gagtest.rickcodetalk.net:3000'
 const DEFAULT_HEADER = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded'});
 const DEFAULT_OPTION = new RequestOptions({ headers: DEFAULT_HEADER });
 const BATCH_SIZE = 10;
@@ -60,7 +61,6 @@ export class MainService {
             this.http.get(`${SERVER_URL}/data/posts/get?maxId=${maxId}`, DEFAULT_OPTION)
                 .map(r => {
                     let j = r.json();
-                    console.log(j);
                     if(j.status === 'S') {
 
                         j.data = j.data.map(

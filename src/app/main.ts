@@ -12,16 +12,7 @@ declare var jQuery:any;
     styleUrls: ['./main.css'],
     host: {
         '(window:scroll)': 'onScrollTrack($event)',
-        /*
-        '(window:click)': 'onClick($event)',
-        */
-//        '(document:drag)': 'onTest($event)',
-//        '(document:mousemove)': 'onTest($event)',
-//        '(document:touchmove)': 'onTest($event)',
         '(document:touchend)': 'onTouchEnd($event)',
-//        '(document:touch)': 'onScrollTrack($event)',
-//        '(document:dragend)': 'onTest($event)',
-        
     }
 })
 export class Main {
