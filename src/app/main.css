@@ -1,0 +1,93 @@
+.all-post {
+    margin: auto;
+    width: 90vw;
+    height:100vw;
+}
+
+.post {
+
+    margin-top: 3vw;
+}
+
+.thumbnail img {
+    display: block;
+    margin:  auto;
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail video {
+    display: block;
+    margin:  auto;
+    width: 100%;
+    height: 100%;
+}
+
+.like {
+
+    margin-top: 1vw;
+    height: 3vw;
+}
+
+.like span {
+
+    font-size: 3vw;
+    color: red;
+    vertical-align: top;
+}
+
+.like img {
+
+    width: 3vw;
+    margin-right: 1vw;
+    vertical-align: top;
+}
+
+.comment {
+
+    margin-top: 1vw;
+    height: 3vw;
+}
+
+.comment span {
+
+    font-size: 3vw;
+    color: red;
+    vertical-align: top;
+}
+
+.comment img {
+
+    width: 3vw;
+    margin-right: 1vw;
+    vertical-align: top;
+}
+
+.caption span {
+    display: inline-block;
+    font-size: 3vw;
+    vertical-align: top;
+}
+
+.creation {
+
+    margin-top: 1vw;
+}
+
+.creation span {
+
+    display: inline-block;
+    font-size: 3vw;
+    vertical-align: top;
+    color: gray;
+}
+
+.sortby span {
+
+    font-size: 5vw;
+}
+
+.filler {
+
+    height: 30vh;
+}
