@@ -3,9 +3,9 @@ import { Headers, Http, RequestOptions, Jsonp } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Subject } from 'rxjs/Subject';
 // Localhost
-const SERVER_URL = 'http://localhost:3000';
+//const SERVER_URL = 'http://localhost:3000';
 // AWS Server
-//const SERVER_URL = 'http://9gagtest.rickcodetalk.net:3000'
+const SERVER_URL = 'http://9gagtest.rickcodetalk.net:3000'
 const DEFAULT_HEADER = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded'});
 const DEFAULT_OPTION = new RequestOptions({ headers: DEFAULT_HEADER });
 const BATCH_SIZE = 10;
