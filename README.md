@@ -4,6 +4,7 @@
 Resources
 -------------
 Server source code: [https://github.com/rickcodetalk/ninegag_server](https://github.com/rickcodetalk/ninegag_server)
+
 Frontend source code: [https://github.com/rickcodetalk/ninegag](https://github.com/rickcodetalk/ninegag)
 
 Demo URL: [http://9gagtest.rickcodetalk.net:3000](http://9gagtest.rickcodetalk.net:3000)
